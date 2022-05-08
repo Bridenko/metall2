@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('./html/head.html',{
+	"title":"catalog-page",
+	})
+	<body>
+		<div class="wrapper">
+			@@include('./html/header.html',{
+                "link":"0"
+            })
+			<main class="main">
+                <section class="catalog-page">
+                    <div class="catalog-page__container container">
+                        <div class="catalog-page__content">
+                            <div class="catalog-page__head">
+                                <div class="catalog-page__head-home">
+                                    <a href="./index.html">Главная</a>
+                                </div>
+                                <div class="catalog-page__head-title">
+                                    <p>Каталог</p>
+                                </div>
+                            </div>
+                            <div class="catalog-page__main-title">
+                                <h3>Каталог</h3>
+                            </div>
+                            <div class="catalog-grid">
+                                <div class="catalog-grid__item">
+                                    <div class="catalog-grid__picture">
+                                        <img src="./img/userfiles/catalog-grid-01.svg" alt="">
+                                    </div>
+                                    <div class="catalog-grid__name">
+                                        <a href="./subcatalog.html">Пробивные станки</a>
+                                    </div>
+                                </div>
+                                <div class="catalog-grid__item">
+                                    <div class="catalog-grid__picture">
+                                        <img src="./img/userfiles/catalog-grid-02.svg" alt="">
+                                    </div>
+                                    <div class="catalog-grid__name">
+                                        <a href="./subcatalog.html">Гибочные прессы</a>
+                                    </div>
+                                </div>
+                                <div class="catalog-grid__item">
+                                    <div class="catalog-grid__picture">
+                                        <img src="./img/userfiles/catalog-grid-03.svg" alt="">
+                                    </div>
+                                    <div class="catalog-grid__name">
+                                        <a href="./subcatalog.html">Гильотинные ножницы</a>
+                                    </div>
+                                </div>
+                                <div class="catalog-grid__item">
+                                    <div class="catalog-grid__picture">
+                                        <img src="./img/userfiles/catalog-grid-04.svg" alt="">
+                                    </div>
+                                    <div class="catalog-grid__name">
+                                        <a href="./subcatalog.html">Станки для удаления грата, заусенцев, шлифования и полировки металла</a>
+                                    </div>
+                                </div>
+                                <div class="catalog-grid__item">
+                                    <div class="catalog-grid__picture">
+                                        <img src="./img/userfiles/catalog-grid-05.svg" alt="">
+                                    </div>
+                                    <div class="catalog-grid__name">
+                                        <a href="./subcatalog.html">Автоматизированные гибочные станки для проволоки и труб</a>
+                                    </div>
+                                </div>
+                                <div class="catalog-grid__item">
+                                    <div class="catalog-grid__picture">
+                                        <img src="./img/userfiles/catalog-grid-06.svg" alt="">
+                                    </div>
+                                    <div class="catalog-grid__name">
+                                        <a href="./subcatalog.html">Универсальные станки</a>
+                                    </div>
+                                </div>
+                                <div class="catalog-grid__item">
+                                    <div class="catalog-grid__picture">
+                                        <img src="./img/userfiles/catalog-grid-07.svg" alt="">
+                                    </div>
+                                    <div class="catalog-grid__name">
+                                        <a href="./subcatalog.html">Фильтры для очистки воздуха</a>
+                                    </div>
+                                </div>
+                                <div class="catalog-grid__item">
+                                    <div class="catalog-grid__picture">
+                                        <img src="./img/userfiles/catalog-grid-08.svg" alt="">
+                                    </div>
+                                    <div class="catalog-grid__name">
+                                        <a href="./subcatalog.html">Инструмент для гибочных прессов</a>
+                                    </div>
+                                </div>
+                                <div class="catalog-grid__item">
+                                    <div class="catalog-grid__picture">
+                                        <img src="./img/userfiles/catalog-grid-09.svg" alt="">
+                                    </div>
+                                    <div class="catalog-grid__name">
+                                        <a href="./subcatalog.html">Оборудование со склада</a>
+                                    </div>
+                                </div>
+                                <div class="catalog-grid__item">
+                                    <div class="catalog-grid__picture">
+                                        <img src="./img/userfiles/catalog-grid-10.svg" alt="">
+                                    </div>
+                                    <div class="catalog-grid__name">
+                                        <a href="./subcatalog.html">Оборудование для рабочей зоны и склада</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/sale.html',{})
+                @@include('./html/form-call.html',{})
+			</main>
+			@@include('./html/footer.html',{})
+		</div>
+		@@include('./html/js.html',{})
+	</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('./html/head.html',{
+	"title":"Company",
+	})
+	<body>
+		<div class="wrapper">
+			@@include('./html/header.html',{
+                "link":"0"
+            })
+			<main class="main">
+                <section class="company">
+                    <div class="company-container container">
+                        <div class="company-triangle left-triangle">
+                            <img src="./img/green-triangle.svg" alt="">
+                        </div>
+                        <div class="company-aside">
+                            <div class="company-aside__menu">
+                                <ul class="company-aside__list">
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./company.html">Компания</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./services.html">Услуги</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./participants.html">Участники</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./portfolio.html">Портфолио</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./news.html">Новости</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./publications.html">Публикации</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link active" href="./contacts.html">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="company-content">
+                            <div class="company-content__head">
+                                <div class="company-content__head-home">
+                                    <a href="./index.html">Главная</a>
+                                </div>
+                                <div class="company-content__head-title">
+                                    <p>Контакты</p>
+                                </div>
+                            </div>
+                            <div class="company-content__body">
+                                <div class="company-content__main-title">
+                                    <h3>Контакты</h3>
+                                </div>
+                                <div class="contacts">
+                                    <div class="contacts-head">
+                                        <div class="contacts-head__title"><h4>Общие вопросы и вопросы по сотрудничеству:</h4></div>
+                                        <div class="contacts-head__mail link-hover"><a href= "mailto:ivan@italianmachines.eu">ivan@italianmachines.eu</a></div>
+                                        <div class="contacts-head__tel link-hover"><a href="tel:+380666666666">+371 <span>2 920 6296</span></a></div>
+                                    </div>
+                                    <div class="contacts">
+                                        <div class="contacts-triangle right-triangle">
+                                            <img src="./img/red-triangle.svg" alt="">
+                                        </div>
+                                        <div class="contacts-title"><h4>Наши представительства:</h4></div>
+                                        <div class="contacts-columns">
+                                            <div class="contacts-column">
+                                                <div class="contacts-column__title"><h5>Рига, Латвия</h5></div>
+                                                <div class="contacts-column__text"><p>Voleru iela 2, Riga, LV-1083, Latvia</p></div>
+                                                <div class="contacts-column__mail link-hover"><a href= "mailto:latvia@italianmachines.lv">latvia@italianmachines.lv</a></div>
+                                                <div class="contacts-column__tel link-hover"><a href="tel:+380666666666">+371 <span>2 920 6296</span></a></div>
+                                            </div>
+                                            <div class="contacts-column">
+                                                <div class="contacts-column__title"><h5>Москва, Россия</h5></div>
+                                                <div class="contacts-column__text">
+                                                    <span>Центральный офис:</span>
+                                                    <p>ул. Лобненская, д. 21, Москва, 127644, Россия</p>
+                                                    <span>Производство:</span>
+                                                    <p>д. Аббакумово, уч. № 5, Мытищи, 141051, Московская обл., Россия</p>
+                                                </div>
+                                                <div class="contacts-column__mail link-hover"><a href= "mailto:moscow@italianmachines.ru">moscow@italianmachines.ru</a></div>
+                                                <div class="contacts-column__tel link-hover"><a href="tel:+380666666666">+7 968 <span>618 2020</span></a></div>
+                                            </div>
+                                            <div class="contacts-column">
+                                                <div class="contacts-column__title"><h5>Алматы, Казахтан</h5></div>
+                                                <div class="contacts-column__text">
+                                                    <p>мик-н. Алатау, ул. Асемтау, д. 58, Алматы, A15B9P8, Казахстан</p>
+                                                </div>
+                                                <div class="contacts-column__mail link-hover"><a href= "mailto:almaty@italianmachines.kz">almaty@italianmachines.kz</a></div>
+                                                <div class="contacts-column__tel link-hover"><a href="tel:+380666666666">+7 702 <span>213 2990</span></a></div>
+                                            </div>
+                                            <div class="contacts-column">
+                                                <div class="contacts-column__title"><h5>Ташкент, Узбекистан</h5></div>
+                                                <div class="contacts-column__text">
+                                                    <p>КазахстанМирзо-Улугбекский р-н, ул. Мустакиллик шох, д. 130, Ташкент, Узбекистан</p>
+                                                </div>
+                                                <div class="contacts-column__mail link-hover"><a href= "mailto:tashkent@italianmachines.uz">tashkent@italianmachines.uz</a></div>
+                                                <div class="contacts-column__tel link-hover"><a href="tel:+380666666666">+998 <span>94 608 3676</span></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-maps">
+                        <div class="contacts-maps__picture">
+                            <img src="./img/userfiles/contacts-01.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/form-call.html',{})
+			</main>
+			@@include('./html/footer.html',{})
+		</div>
+		@@include('./html/js.html',{})
+	</body>
+</html>

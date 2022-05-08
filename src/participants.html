@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('./html/head.html',{
+	"title":"Company",
+	})
+	<body>
+		<div class="wrapper">
+			@@include('./html/header.html',{
+                "link":"0"
+            })
+			<main class="main">
+                <section class="company">
+                    <div class="company-container container">
+                        <div class="company-triangle left-triangle">
+                            <img src="./img/green-triangle.svg" alt="">
+                        </div>
+                        <div class="company-aside">
+                            <div class="company-aside__menu">
+                                <ul class="company-aside__list">
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./company.html">Компания</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./services.html">Услуги</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link active" href="./participants.html">Участники</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./portfolio.html">Портфолио</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./news.html">Новости</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./publications.html">Публикации</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./contacts.html">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="company-content">
+                            <div class="company-content__head">
+                                <div class="company-content__head-home">
+                                    <a href="./index.html">Главная</a>
+                                </div>
+                                <div class="company-content__head-title">
+                                    <p>Участники</p>
+                                </div>
+                            </div>
+                            <div class="company-content__body">
+                                <div class="company-content__main-title">
+                                    <h3>Участники</h3>
+                                </div>
+                                <div class="participants">
+                                    <div class="participants-cards">
+                                        <div class="participants-cards__triangle right-triangle">
+                                            <img src="./img/red-triangle.svg" alt="">
+                                        </div>
+                                        <div class="participants-card">
+                                            <div class="participants-card__picture"><img src="./files/userfiles/participants-01.svg" alt=""></div>
+                                            <div class="participants-card__info">
+                                                <div class="participants-card__title"><h5>COSTA LEVIGATRICI</h5></div>
+                                                <div class="participants-card__text"><p>Станки для шлифовки, полировки и удаления грата</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="participants-card">
+                                            <div class="participants-card__picture"><img src="./files/userfiles/participants-02.svg" alt=""></div>
+                                            <div class="participants-card__info">
+                                                <div class="participants-card__title"><h5>MODULA</h5></div>
+                                                <div class="participants-card__text"><p>Автоматизированные системы хранения</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="participants-card">
+                                            <div class="participants-card__picture"><img src="./files/userfiles/participants-03.svg" alt=""></div>
+                                            <div class="participants-card__info">
+                                                <div class="participants-card__title"><h5>HFILTRATION</h5></div>
+                                                <div class="participants-card__text"><p>Системы фильтрации воздуха</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="participants-card">
+                                            <div class="participants-card__picture"><img src="./files/userfiles/participants-04.svg" alt=""></div>
+                                            <div class="participants-card__info">
+                                                <div class="participants-card__title"><h5>OMG</h5></div>
+                                                <div class="participants-card__text"><p>Гибочные станки для проволоки и труб</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="participants-card">
+                                            <div class="participants-card__picture"><img src="./files/userfiles/participants-05.svg" alt=""></div>
+                                            <div class="participants-card__info">
+                                                <div class="participants-card__title"><h5>LISTA</h5></div>
+                                                <div class="participants-card__text"><p>Оборудование для рабочей зоны и склада</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/form-call.html',{})
+			</main>
+			@@include('./html/footer.html',{})
+		</div>
+		@@include('./html/js.html',{})
+	</body>
+</html>

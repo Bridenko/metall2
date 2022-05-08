@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('./html/head.html',{
+	"title":"Company",
+	})
+	<body>
+		<div class="wrapper">
+			@@include('./html/header.html',{
+                "link":"0"
+            })
+			<main class="main">
+                <section class="company">
+                    <div class="company-container container">
+                        <div class="company-triangle left-triangle">
+                            <img src="./img/green-triangle.svg" alt="">
+                        </div>
+                        <div class="company-aside">
+                            <div class="company-aside__menu">
+                                <ul class="company-aside__list">
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./company.html">Компания</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./services.html">Услуги</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./participants.html">Участники</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./portfolio.html">Портфолио</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link active" href="./news.html">Новости</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./publications.html">Публикации</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./contacts.html">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="company-content">
+                            <div class="company-content__head">
+                                <div class="company-content__head-home">
+                                    <a href="./index.html">Главная</a>
+                                </div>
+                                <div class="company-content__head-title">
+                                    <a href="./news.html">Новости</a>
+                                </div>
+                            </div>
+                            <div class="company-content__body">
+                                <div class="company-content__main-title">
+                                    <h3>Гидравлический листогибочный пресс ACCURL в Даугавпилсе, Латвия</h3>
+                                </div>
+                                <div class="news-article">
+                                    <div class="news-article__date"><p>17.03.2022</p></div>
+                                    <div class="news-article__text"><p>Новый гидравлический листогибочный пресс ACCURL по специальному заказу был установлен и запущен в Даугавпилсе, Латвия.</p></div>
+                                    <div class="news-article__image"><img src="./img/userfiles/news-article-01.jpg" alt=""></div>
+                                    <div class="news-article__text"><p>Листогибочный пресс ACCURL разработан с большим вниманием к деталям. Исследования, проведенные в отношении напряжения каркаса, позволили изготовить станок, который наиболее под====-=ходящим образом реагирует на механическое воздействие и, следовательно, гарантирует более стабильную структуру, а, значит и более высокую точность гиба</p></div>
+                                </div>
+                                <div class="news">
+                                    <div class="news-cards__other-title"><h4>Другие новости</h4></div>
+                                    <div class="news-cards other">
+                                        <div class="news-cards__triangle-other right-triangle article">
+                                            <img src="./img/red-triangle.svg" alt="">
+                                        </div>
+                                        <div class="news-card">
+                                            <a href="./news-card.html" class="news-card__image"><img src="./files/userfiles/news-card-01.jpg" alt=""></a>
+                                            <div class="news-card__info">
+                                                <div class="news-card__date"><p>17.03.2022</p></div>
+                                                <div class="news-card__title"><h5>Первый Accurl лазер в странах Балтии</h5></div>
+                                                <div class="news-card__text"><p>Мы рады сообщить, что первый станок лазерной резки ACURL в странах Балтии был установлен и запущен Italian Machinery Association у клиента в Каунасе, Литва.</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="news-card">
+                                            <a href="./news-card.html" class="news-card__image"><img src="./files/userfiles/news-card-02.jpg" alt=""></a>
+                                            <div class="news-card__info">
+                                                <div class="news-card__date"><p>17.03.2022</p></div>
+                                                <div class="news-card__title"><h5>Euromac MTX Flex 6 Hybrid в Нур-Султане, Казахстан</h5></div>
+                                                <div class="news-card__text"><p>Нами был проверен, настроен и заново запущен для клиента в городе Нур-Султан (Казахстан) координатно-пробивной пресс Euromac MTX Flex 6 Hybrid.</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="news-card">
+                                            <a href="./news-card.html" class="news-card__image"><img src="./files/userfiles/news-card-03.jpg" alt=""></a>
+                                            <div class="news-card__info">
+                                                <div class="news-card__date"><p>17.03.2022</p></div>
+                                                <div class="news-card__title"><h5>Первый автоматический панелегиб Salvagnini P2 в Казахстане</h5></div>
+                                                <div class="news-card__text"><p>Мы рады сообщить, что в феврале 2022 года в Казахстане появится первый автоматический панелегиб Salvagnini P2.</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/form-call.html',{})
+			</main>
+			@@include('./html/footer.html',{})
+		</div>
+		@@include('./html/js.html',{})
+	</body>
+</html>

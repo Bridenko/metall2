@@ -1,0 +1,137 @@
+.contacts {
+    position: relative;
+    &-triangle {
+        bottom: 25px;
+        right: -140px;
+    }
+
+    &-head {
+        margin-bottom: 50px;
+        &__title {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 40px;
+            margin-bottom: 15px;
+        }
+		&__mail {
+            * {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 34px;
+                color: $green;
+            }
+		}
+        &__tel {
+            * {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 34px;
+            }
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &-title {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 40px;
+        margin-bottom: 60px;
+    }
+
+    &-columns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 100px;
+        row-gap: 80px;
+        margin-bottom: 50px;
+        @media (max-width:1100px){
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 50px;
+            row-gap: 70px;
+        }
+        @media (max-width:650px){
+            grid-template-columns: repeat(1, 1fr);
+            column-gap: 30px;
+        }
+    }
+
+    &-column {
+        position: relative;
+        max-width: 263px;
+        &::before{
+            content:'';
+            position: absolute;
+            top: -20px;
+            left: 0px;
+            width: 70px;
+            height: 4px;
+            background: $red;
+        }
+
+		&__title {
+            * {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 35px;
+            }
+		}
+
+		&__text {
+            margin-bottom: 20px;
+            span {
+                font-weight: 700;
+            }
+            * {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 29px;
+            }
+		}
+
+		&__mail {
+            * {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 34px;
+                color: $green;
+            }
+		}
+
+		&__tel {
+            * {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 34px;
+            }
+            span {
+                font-weight: 700;
+            }
+		}
+    }
+}
+
+.contacts-maps {
+
+
+    &__picture {
+
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        
+        overflow-x: auto;
+        @media (max-width:1680px){
+            justify-content: flex-start;
+        }
+    }
+    &__picture img {
+        max-width: 1680px;
+        min-width: 1680px;
+        min-height: 700px;
+        max-height: 700px;
+        object-fit:cover;
+    }
+}
+

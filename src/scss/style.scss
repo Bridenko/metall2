@@ -1,0 +1,189 @@
+// Project color
+
+$black: #000000;
+$white: #FFFFFF;
+$red: #CE2A37;
+$green: #05A062;
+$blue: #2FA5C8;
+$bg: #FFFFFF;
+
+// Container 
+
+$max-width: 1680px;
+$container: 1440px;
+
+// For media query (max-width)
+
+$pc: $max-width; // md1
+$tablet: $container; // md2
+$mobile: 767px; // md3
+
+// For slick slider 
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+// General style
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+
+.left-triangle {
+    position: absolute;
+    left: -140px;
+    // В css класс прописать топ
+    // top: 10px;
+    @media (max-width:1630px){
+        display: none;
+    }
+}
+.right-triangle {
+    position: absolute;
+    right: -120px;
+    // В css класс прописать топ
+    // top: 10px;
+    @media (max-width:1630px){
+        display: none;
+    }
+}
+
+a {
+    font-style: normal;
+}
+body {
+    background-color: $bg;
+}
+
+a { color: $black; }
+button { background: transparent; }
+body, a, p, button, ul, li, select, option, input, textarea, input::placeholder, textarea::placeholder {
+    // font-family: 'Righteous', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    // line-height: 30px;
+    color: $black;
+    @media (max-width:$mobile){
+        font-size: 16px;
+        // line-height: 21px;
+    }
+}
+li {
+    background: transparent;
+}
+textarea {
+    resize: none;
+}
+
+// Container
+
+.max-container {
+    max-width: $max-width;
+    width: 100%;
+    margin: 0 auto;
+}
+.container {
+    max-width: $container;
+    margin: 0 auto;
+    padding: 0 20px;
+    @media (max-width:$mobile){
+        padding: 0px 10px;
+    }
+}
+
+
+.js-scroll {
+    transition: all 0.5s ease-in-out;
+}
+
+// Elements
+.green-triangle {
+
+}
+.red-triangle {
+    
+}
+.link-hover {
+    a {
+        text-decoration: underline;
+        transition: all ease-in-out 0.3s;
+        text-decoration-color: transparent;   
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.hover-scale {
+    * {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+.lock {
+    overflow: hidden;
+}
+
+
+// Header background line
+
+.header-background-opacity-25 {
+    background-color: #ffffff59;
+    border-bottom: solid 1px #36363617;
+}
+
+.header-background-opacity-50 {
+    background-color: #ffffff9f;
+    border-bottom: solid 1px #36363631;
+}
+
+.header-background-opacity-75 {
+    background-color: #ffffffce;
+    border-bottom: solid 1px #36363646;
+}
+
+.header-background-opacity-100 {
+    background-color: #ffffff;
+    border-bottom: solid 1px #36363673;
+}
+
+// Import scss modules
+
+@import "null-style";
+@import "fonts";
+@import "header";
+@import "index";
+@import "company";
+@import "services";
+@import "participants";
+@import "portfolio-cards";
+@import "news";
+@import "publications";
+@import "contacts";
+@import "footer";
+
+
+@import "catalog-page";
+
+
+
+// &:hover {
+//     background: #048853;
+// }
+
+// &:hover {
+//     background: #b82733;
+// }

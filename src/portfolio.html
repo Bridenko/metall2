@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('./html/head.html',{
+	"title":"Company",
+	})
+	<body>
+		<div class="wrapper">
+			@@include('./html/header.html',{
+                "link":"0"
+            })
+			<main class="main">
+                <section class="company">
+                    <div class="company-container container">
+                        <div class="company-triangle left-triangle">
+                            <img src="./img/green-triangle.svg" alt="">
+                        </div>
+                        <div class="company-aside">
+                            <div class="company-aside__menu">
+                                <ul class="company-aside__list">
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./company.html">Компания</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./services.html">Услуги</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./participants.html">Участники</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link active" href="./portfolio.html">Портфолио</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./news.html">Новости</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./publications.html">Публикации</a></li>
+                                    <li class="company-aside__item"><a class="company-aside__link" href="./contacts.html">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="company-content">
+                            <div class="company-content__head">
+                                <div class="company-content__head-home">
+                                    <a href="./index.html">Главная</a>
+                                </div>
+                                <div class="company-content__head-title">
+                                    <p>Портфолио</p>
+                                </div>
+                            </div>
+                            <div class="company-content__body">
+                                <div class="company-content__main-title">
+                                    <h3>Портфолио</h3>
+                                </div>
+                                <div class="portfolio">
+                                    <div class="portfolio-tabs">
+                                        <ul class="portfolio-tabs__list">
+                                            <li class="portfolio-tabs__item active"><a href="#!">2022</a></li>
+                                            <li class="portfolio-tabs__item"><a href="#!">2021</a></li>
+                                            <li class="portfolio-tabs__item"><a href="#!">2020</a></li>
+                                            <li class="portfolio-tabs__item"><a href="#!">2019</a></li>
+                                            <li class="portfolio-tabs__item"><a href="#!">2018</a></li>
+                                            <li class="portfolio-tabs__item"><a href="#!">2017</a></li>
+                                            <li class="portfolio-tabs__item"><a href="#!">2016</a></li>
+                                        </ul>
+                                    </div>
+                                    @@include('./portfolio-cards.html',{})
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('./html/supplies.html',{})
+			</main>
+			@@include('./html/footer.html',{})
+		</div>
+		@@include('./html/js.html',{})
+	</body>
+</html>
