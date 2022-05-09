@@ -1,3 +1,0 @@
-# ima
-# ima
-# ima
