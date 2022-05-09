@@ -97,7 +97,7 @@
 	justify-content: space-between;
 	@media (max-width:$mobile){
 		flex-direction: column-reverse;
-		gap: 30px; 
+		// gap: 30px; 
 	}
 	&__links {
 		display: flex;
@@ -106,6 +106,9 @@
 		margin-right: 71px;
 		@media (max-width:$tablet){
 			margin-right: 0px;
+		}
+		@media (max-width:$mobile) {
+			margin-bottom: 30px;
 		}
 	}
 
